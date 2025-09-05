@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeaFlora - Jamu Telang dan Millecrepes Telang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for smooth scrolling and more elegance */
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f3e5f5 100%);
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        /* Mobile menu animation */
+        .mobile-menu {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+        .mobile-menu.show {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold text-green-600">PeaFlora</h1>
+                <span class="ml-2 text-sm text-gray-600">Jamu Telang & Millecrepes Telang</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#tentang-kami" class="text-gray-700 hover:text-green-600 transition">Tentang Kami</a>
+                <a href="#manfaat-produk" class="text-gray-700 hover:text-green-600 transition">Manfaat Produk</a>
+                <a href="#testimonial" class="text-gray-700 hover:text-green-600 transition">Pesan Pembeli</a>
+                <a href="#kontak" class="text-gray-700 hover:text-green-600 transition">Kontak</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <nav class="container mx-auto px-4 py-4 space-y-4">
+                <a href="#tentang-kami" class="block text-gray-700 hover:text-green-600 transition">Tentang Kami</a>
+                <a href="#manfaat-produk" class="block text-gray-700 hover:text-green-600 transition">Manfaat Produk</a>
+                <a href="#testimonial" class="block text-gray-700 hover:text-green-600 transition">Pesan Pembeli</a>
+                <a href="#kontak" class="block text-gray-700 hover:text-green-600 transition">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 text-center">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/affc8d75-1722-49a4-9974-3f23d5247d6a.png" alt="Botol jamu telang berbahan daun telang organik dalam kemasan elegan hijau dengan label herbal alami, dikelilingi oleh daun-daun telang segar dan ilustrasi kesehatan berkilauan dalam suasana modern dan mewah" class="rounded-lg shadow-lg w-full max-w-md mx-auto" />
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4">Selamat Datang di PeaFlora</h2>
+                    <p class="text-lg text-gray-600 mb-6 max-w-lg mx-auto">Temukan keajaiban kesehatan dari Jamu Telang dan Millecrepes Telang kami. Produk alami untuk gaya hidup sehat dan elegan.</p>
+                    <a href="#manfaat-produk" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang-kami" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">PeaFlora lahir dari komitmen untuk menghadirkan produk herbal berkualitas tinggi yang terinspirasi dari tradisi kesehatan Nusantara. Kami menggabungkan kebijaksanaan nenek moyang dengan inovasi modern untuk menghasilkan Jamu Telang dan Millecrepes Telang yang tak hanya sehat, tetapi juga elegan dan cocok untuk gaya hidup kontemporer.</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad427439-d764-4569-814d-88d5da97fb49.png" alt="Gambar tim PeaFlora bekerja di kebun organik dengan petani membesarkan tanaman telang, manusia dan alam harmonis dalam suasana pertanian berkelanjutan dengan cahaya alami yang hangat" class="rounded-lg shadow-lg w-full" />
+                </div>
+                <div class="md:w-1/2 pl-0 md:pl-8">
+                    <p class="text-gray-700 leading-relaxed mb-4">Dalam setiap produk PeaFlora, kami memastikan penggunaan bahan-bahan alami organik yang dipetik langsung dari kebun kami yang terawat dengan hati-hati. Filosofi kami adalah menyeimbangkan kesehatan, kecantikan, dan keberlanjutan, menjadikan PeaFlora lebih dari sekadar bisnis—tetapi sebuah missi voor kecintaan terhadap bumi dan kesejahteraan manusia.</p>
+                    <p class="text-gray-700 leading-relaxed">Bergabunglah dengan kami dalam perjalanan ini untuk menikmati manfaat herbal yang luar biasa, dimulai dari kemasan yang elegan hingga rasa yang memanjakan selera modern.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manfaat Produk -->
+    <section id="manfaat-produk" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Manfaat Produk</h3>
+                <p class="text-gray-600">Temukan kuasa alami dari Jamu Telang dan Millecrepes Telang PeaFlora, yang dirancang untuk meningkatkan kualitas hidup Anda dengan cara yang elegan dan efektif.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Jamu Telang -->
+                <div class="bg-white p-8 rounded-lg shadow-lg product-card">
+                    <div class="text-center mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3e4f500b-ef39-46fc-a4a5-8c30390d43f1.png" alt="Botol jamu telang dengan daun telang hijau yang melayang di sekitarnya, menunjukkan partikel antioksidan yang berkilauan, kemasan premium dengan label kesehatan yang mewah" class="w-32 mx-auto mb-4 rounded" />
+                        <h4 class="text-2xl font-bold text-green-600">Jamu Telang</h4>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Mengandung antioksidan tinggi yang membantu melawan radikal bebas dan mencegah penuaan dini.</li>
+                        <li>Mendukung kesehatan kulit dengan membuatnya lebih bersih, cerah, dan bebas dari noda.</li>
+                        <li>Meningkatkan imunitas tubuh melalui bahan alami yang berkhasiat.</li>
+                        <li>Bermasalah konstitusi tubuh yang seimbang, membantu detoksifikasi hati dan ginjal.</li>
+                        <li>Rasa yang lembut dan alami, sempurna untuk rutinitas sehari-hari tanpa efek samping.</li>
+                    </ul>
+                </div>
+                <!-- Millecrepes Telang -->
+                <div class="bg-white p-8 rounded-lg shadow-lg product-card">
+                    <div class="text-center mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/41b7f9e3-5b18-4691-bfcd-d2965429bb79.png" alt="Lapis millecrepes dengan topping daun telang hijau, tampak empuk dan lezat dalam bentuk kue modern dengan warna hijau dan cream yang elegan" class="w-32 mx-auto mb-4 rounded" />
+                        <h4 class="text-2xl font-bold text-green-600">Millecrepes Telang</h4>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Gabungan citarasa manis dan herbal yang unik, memberikan pengalaman kuliner sehat.</li>
+                        <li>Kaya nutrisi dari telang yang membantu dalam pengelolaan berat badan sehat.</li>
+                        <li>Meningkatkan energi secara alami tanpa kafein berlebih, ideal untuk snack sehari-hari.</li>
+                        <li>Tekstur lembut dan lapisan krim yang memberikan sensasi pesta yang elegan.</li>
+                        <li>Alternatif dessert yang sehat tanpa gula rafinasi, cocok untuk diet gaya hidup aktif.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pesan Kritik dari Pembeli -->
+    <section id="testimonial" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Pesan dari Pembeli Kami</h3>
+                <p class="text-gray-600">Dengarkan apa yang dikatakan pelanggan setia PeaFlora tentang pengalaman mereka.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e775147-67f5-4d46-bf39-fa94739e13a1.png" alt="Foto profil wanita muda dengan senyum cerah, rambut panjang bergelombang, memegang botol jamu telang, suasana rumah yang hangat" class="w-16 h-16 rounded-full mx-auto mb-4" />
+                    <p class="text-gray-700 italic mb-4">"Rasanya segar dan manfaatnya luar biasa untuk kulit saya. Sekarang kulit saya lebih cerah dan halus. Terima kasih PeaFlora!"</p>
+                    <p class="text-right text-gray-600">- Sari, Jakarta</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ed9c4dc8-2052-4ad3-97aa-7328ef938de7.png" alt="Foto profil pria paruh baya tersenyum, dengan latar belakang ruang tamu modern, memegang millet crepes telang" class="w-16 h-16 rounded-full mx-auto mb-4" />
+                    <p class="text-gray-700 italic mb-4">"Millecrepes Telang rasanya unik dan sehat. Saya suka karena rasa manisnya alami, cocok untuk diet saya."</p>
+                    <p class="text-right text-gray-600">- Ardi, Bandung</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a305a342-15a1-477f-9687-52d3fb0a50d2.png" alt="Foto profil keluarga bahagia dengan anak kecil, menikmati jamu telang bersama, suasana dapur rumah tangga" class="w-16 h-16 rounded-full mx-auto mb-4" />
+                    <p class="text-gray-700 italic mb-4">"Produk PeaFlora membantu keluarga kami menjaga kesehatan secara alami. Kemasan juga sangat elegan!"</p>
+                    <p class="text-right text-gray-600">- Keluarga Widi, Surabaya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Hubungi Kami</h3>
+                <p class="text-gray-600">Ada pertanyaan, saran, atau kritik? Kami siap mendengarnya. Kirim pesan Anda dan kami akan merespons secepat mungkin.</p>
+            </div>
+            <form id="contact-form" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 mb-2">Nama</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 mb-2">Pesan</label>
+                    <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-600 text-white py-3 rounded hover:bg-green-700 transition">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 PeaFlora. Semua hak dilindungi. Dibuat untuk kesehatan alami dan elegan.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('show');
+        });
+
+        // Contact form submission (basic alert)
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. Kami akan segera menghubungi Anda.');
+            form.reset();
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
